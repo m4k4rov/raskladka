@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Смена раскладки</title>
+  <link rel="stylesheet" href="1.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="textPole">
+      <textarea name="text" id="text" cols="30" rows="10" class="text"></textarea>
+      <span id="ssil" class="ssil">Введите текст для перевода</span>
+    </div>
+    <div class="raskladka">
+      <span class="eng">С английской раскладки на русскую</span>
+      <button id="engButton" class="buttonText">
+        <img id="leftImg" width="40px" src="./left.png" alt="" class="leftImg">
+      </button>
+      <button id="rusButton" class="buttonText">
+        <img id="rightImg" width="40px" src="./right.png" alt="" class="rightImg">
+      </button>
+      <span class="rus">С русской раскладки на английскую</span>
+    </div>
+    <div class="buttonPole">
+      <button id="button" class="button">
+        <span class="textButton">Кнопка</span>
+      </button>
+    </div> 
+    <div class="bufer">
+      <span id="bufer" class="buferText"></span>
+    </div>
+  </div>
+</body>
+<script src="1.js"></script>
+</html>
