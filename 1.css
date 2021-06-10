@@ -86,9 +86,16 @@ body {
     /*background: rgba(190, 189, 189, 0.274);*/
 }
 .eng {
-    text-align: right;
-    min-width: 189px;
+    display: flex;
+    min-width: 160px;
+    align-items: center;
+    justify-content: flex-end;
 }
 .rus {
+    display: flex;
     min-width: 160px;
+    align-items: center;
+}
+.rightImg1 {
+    transform: scale(-1, 1);
 }
