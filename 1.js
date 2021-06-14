@@ -34,15 +34,16 @@
       
     };
     textValue.value=perevod;
-    navigator.clipboard.writeText(textValue.value)
-  .then(() => {
-    bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
-    setTimeout(()=>bufer.innerHTML="",3000);
-  })
-  .catch(err => {
-    alert(err);
-  });
-    
+    if (perevod) {
+      navigator.clipboard.writeText(textValue.value)
+      .then(() => {
+        bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
+        setTimeout(()=>bufer.innerHTML="",3000);
+      })
+      .catch(err => {
+        alert(err);
+      });
+    }
   });
   textValue.onblur= function() {
     if (textValue.value!="") {
