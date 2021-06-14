@@ -10,12 +10,15 @@ body {
 }
 .textPole {
     position: relative;
-    width: 610px;
+    max-width: 610px;
+    width: 90%;
     margin: auto;
     margin-bottom: 50px;
+    text-align: center;
 }
 .text {
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     padding: 5px;
     resize: none;
     outline: none;
@@ -24,13 +27,15 @@ body {
 .ssil {
     position: absolute;
     top: 2px;
-    left: 2px;
+    left: 5%;
     transition: 0.5s;
     font-size: 15px;
     color: rgba(29, 28, 28, 0.8);
 }
 
 .button {
+    width: 100px;
+    height: 50px;
     padding: 10px 20px;
     border: none; /*Отключение обводки кнопки*/
     border-radius: 5px; /*Скругление углов кнопки*/
@@ -52,19 +57,20 @@ body {
     position: absolute;
     text-align: center;
     top: 213px;
-    left: 38px;
+    left: 4%;
 }
 .buttonPole {
     margin: auto;
-    width: 86px;
+    max-width: 100px;
 }
 .raskladka {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 10px;
     padding-bottom: 40px;
     padding-top: 40px;
+    margin: 0;
+    
 }
 .buttonText {
     border: none;
@@ -87,15 +93,25 @@ body {
 }
 .eng {
     display: flex;
-    min-width: 160px;
+    min-width: 83px;
     align-items: center;
     justify-content: flex-end;
 }
 .rus {
     display: flex;
-    min-width: 160px;
+    min-width: 83px;
     align-items: center;
+    justify-content: flex-start;
 }
 .rightImg1 {
     transform: scale(-1, 1);
 }
+@media (max-width: 350px) {
+    .eng {
+        font-size: 14px; 
+    }
+    .rus {
+        font-size: 14px;
+    }
+}
+
