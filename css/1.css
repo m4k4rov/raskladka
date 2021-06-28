@@ -151,7 +151,6 @@ p {
         font-size: 14px;
     }
 }
-
 .copy {
     position: absolute;
     right: 4%;
@@ -172,3 +171,4 @@ p {
 .copy:active {
     background: #7394c0;
 }
+

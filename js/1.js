@@ -70,7 +70,7 @@
     if (textValue.value) perevodRaskladki();
   });
 
-  buttonCopy.addEventListener('click', function () {
+  /*buttonCopy.addEventListener('click', function () {
     if (textValue.value) {
       navigator.clipboard.writeText(textPerevod.value)
       .then(() => {
@@ -81,6 +81,19 @@
         bufer.innerHTML=err;
       });
     }
-  })
+  })*/
+  buttonCopy.addEventListener('click', function () {
+    try {
+      if (textValue.value) {
+      textPerevod.select();
+      document.execCommand("copy");
+      bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
+      setTimeout(()=>bufer.innerHTML="",3000);
+      };
+    } catch(err) {
+      bufer.innerHTML=err;
+      setTimeout(()=>bufer.innerHTML="",3000);
+    };
+  });
   
   
