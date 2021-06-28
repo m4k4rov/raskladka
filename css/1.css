@@ -1,4 +1,4 @@
-body {
+﻿body {
     margin: 0;
     font-family: "Roboto", sans-serif; /* Шрифт на странице*/
 }
@@ -155,7 +155,7 @@ p {
 .copy {
     position: absolute;
     right: 4%;
-    top: 84px;
+    top: 82.4px;
     display: flex;
     justify-content: center;
     align-items: center;
