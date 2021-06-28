@@ -20,7 +20,6 @@ body {
     max-width: 610px;
     width: 90%;
     margin: auto;
-    margin-bottom: 50px;
     text-align: center;
 }
 .text {
@@ -30,6 +29,8 @@ body {
     resize: none;
     outline: none;
     border: 1px solid rgba(49, 49, 49, 0.384);
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 .ssil {
     position: absolute;
@@ -63,7 +64,7 @@ body {
     font-size: 15px;
     position: absolute;
     text-align: center;
-    top: 213px;
+    top: 242px;
     left: 4%;
 }
 .buttonPole {
@@ -75,9 +76,8 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 40px;
-    padding-top: 40px;
+
     margin: 0;
-    
 }
 .buttonText {
     border: none;
@@ -114,16 +114,33 @@ h2 {
     text-decoration: underline 1px #999;
     margin: 0;
 }
-p{
+p {
     margin-bottom: 7px;
     margin-top: 0;
 }
+.poloska {
+    position: absolute;
+    top: 30px;
+    left: 6%;
+    width: 90%;
+    max-width: 369px;
+    opacity: 0.4;
+}
+
 @media (max-width: 350px) {
     .eng {
-        font-size: 14px; 
+        font-size: 14px;
     }
     .rus {
         font-size: 14px;
+    }
+    .raskladka {
+        margin-top: 40px;
+    }
+    .poloska {
+        top: 46px;
+        left: 3%;
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
@@ -133,4 +150,25 @@ p{
     p {
         font-size: 14px;
     }
+}
+
+.copy {
+    position: absolute;
+    right: 4%;
+    top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #0a0a0a;
+    border: 1px solid #1b1c1d;
+    cursor: pointer;
+}
+.copy:hover {
+    background: rgba(197, 220, 250, 0.5);
+}
+.copy:active {
+    background: #7394c0;
 }

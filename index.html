@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Смена раскладки</title>
-  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="./css/1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -16,29 +17,30 @@
     <p>Именно данный сервис поможет вам перевести Ваш пароль на другую раскладку</p>
   </header>
   <div class="main">
+    <img src="./img/Group.svg" alt="Poloska" class="poloska">
     <div class="textPole">
-      <textarea name="text" id="text" cols="30" rows="10" class="text"></textarea>
+      <textarea name="text" id="text" cols="30" rows="4" class="text"></textarea>
       <span id="ssil" class="ssil">Введите текст для перевода</span>
+      <textarea name="text2" id="text2" cols="30" rows="4" class="text"></textarea>
+      <button id="copy" class="copy">
+        <span >Copy</span>
+        <img width="20px" src="./img/copy.svg" alt="Icon: copy">
+      </button>
     </div>
     <div class="raskladka">
-      <div class="eng">Eng <img width="30px" src="./left1.png" alt="" class="rightImg1"> Рус</div>
+      <div class="eng">Eng <img width="30px" src="./img/left1.png" alt="" class="rightImg1"> Рус</div>
       <button id="engButton" class="buttonText">
-        <img id="leftImg" width="40px" src="./left.png" alt="" class="leftImg">
+        <img id="leftImg" width="40px" src="./img/left.png" alt="" class="leftImg">
       </button>
       <button id="rusButton" class="buttonText">
-        <img id="rightImg" width="40px" src="./right.png" alt="" class="rightImg">
+        <img id="rightImg" width="40px" src="./img/right.png" alt="" class="rightImg">
       </button>
-      <div class="rus">Рус <img width="30px" src="./left1.png" alt="" class="rightImg1"> Eng</div>
+      <div class="rus">Рус <img width="30px" src="./img/left1.png" alt="" class="rightImg1"> Eng</div>
     </div>
-    <div class="buttonPole">
-      <button id="button" class="button">
-        <span class="textButton">Смена раскладки</span>
-      </button>
-    </div> 
     <div class="bufer">
       <span id="bufer" class="buferText"></span>
     </div>
   </div>
 </body>
-<script src="1.js"></script>
+<script src="./js/1.js"></script>
 </html>
