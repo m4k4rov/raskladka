@@ -60,13 +60,6 @@
     box-shadow: 0 1px 2px rgb(83, 83, 83);
     transform: translateY(2px);
 }
-.bufer {
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-    top: 242px;
-    left: 4%;
-}
 .buttonPole {
     margin: auto;
     max-width: 200px;
@@ -125,6 +118,18 @@ p {
     width: 90%;
     max-width: 369px;
     opacity: 0.4;
+}
+.window {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    top:  20%;
+    left: 23%;
+    background: #999;
+    border-radius: 7px;
+    opacity: 0.6;
+    padding: 10px;
 }
 
 @media (max-width: 350px) {
