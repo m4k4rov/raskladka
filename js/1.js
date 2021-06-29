@@ -55,6 +55,7 @@
   const rusButton=document.getElementById('rusButton');
   const leftImg=document.getElementById('leftImg');
   const rightImg=document.getElementById('rightImg');
+  const windowBuf=document.getElementById('winbuf');
   
   engButton.addEventListener('click',function() {
     leftImg.style.opacity=1;
@@ -70,29 +71,18 @@
     if (textValue.value) perevodRaskladki();
   });
 
-  /*buttonCopy.addEventListener('click', function () {
-    if (textValue.value) {
-      navigator.clipboard.writeText(textPerevod.value)
-      .then(() => {
-        bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
-        setTimeout(()=>bufer.innerHTML="",3000);
-      })
-      .catch(err => {
-        bufer.innerHTML=err;
-      });
-    }
-  })*/
   buttonCopy.addEventListener('click', function () {
     try {
       if (textValue.value) {
-      textPerevod.select();
-      document.execCommand("copy");
-      bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
-      setTimeout(()=>bufer.innerHTML="",3000);
+        textPerevod.select();
+        document.execCommand("copy");
+        bufer.innerHTML="Данная строка автоматически скопирована в буфер обмена для дальнейшей её вставки";
+        windowBuf.classList.remove('hide');
+        setTimeout(()=>windowBuf.classList.add('hide'),3000);
       };
     } catch(err) {
       bufer.innerHTML=err;
-      setTimeout(()=>bufer.innerHTML="",3000);
+      setTimeout(()=>windowBuf.classList.add('hide'),3000);
     };
   });
   

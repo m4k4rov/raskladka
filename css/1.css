@@ -120,33 +120,22 @@ p {
     opacity: 0.4;
 }
 .window {
-    display: none;
     position: absolute;
     width: 50%;
     height: 35%;
-    top:  20%;
+    top: 20%;
     left: 23%;
     background: #999;
     border-radius: 7px;
-    opacity: 0.6;
     padding: 10px;
+    color: #fff;
+    opacity: 0.6;
 }
-
-@media (max-width: 350px) {
-    .eng {
-        font-size: 14px;
-    }
-    .rus {
-        font-size: 14px;
-    }
-    .raskladka {
-        margin-top: 40px;
-    }
-    .poloska {
-        top: 46px;
-        left: 3%;
-        width: 100%;
-    }
+.hide {
+    display: none;
+}
+.buferText {
+    font-size: 20px;
 }
 @media (max-width: 600px) {
     h2 {
@@ -154,6 +143,25 @@ p {
     }
     p {
         font-size: 14px;
+    }
+    .buferText {
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px) {
+    .eng {
+        font-size: 14px;
+    }
+    .rus {
+        font-size: 14px;
+    }
+    .poloska {
+        top: 46px;
+        left: 3%;
+        width: 100%;
+    }
+    .buferText {
+        font-size: 10px;
     }
 }
 .copy {
@@ -167,7 +175,7 @@ p {
     border: none;
     background-color: rgb(255, 255, 255);
     color: #0a0a0a;
-    border: 1px solid #1b1c1d;
+    border: 1px solid rgba(49, 49, 49, 0.384);
     cursor: pointer;
 }
 .copy:hover {
@@ -176,4 +184,3 @@ p {
 .copy:active {
     background: #7394c0;
 }
-
